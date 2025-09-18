@@ -8,7 +8,6 @@ import lombok.Setter;
 import lombok.experimental.SuperBuilder;
 import net.devpull.coworking.common.infrastructure.BaseEntity;
 import net.devpull.coworking.music.domain.model.Track;
-import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import java.math.BigDecimal;
 
@@ -19,7 +18,6 @@ import java.math.BigDecimal;
 @NoArgsConstructor
 @AllArgsConstructor
 @SuperBuilder
-@EntityListeners(AuditingEntityListener.class)
 public class InvoiceLine extends BaseEntity {
 
     @Column(name = "unit_price", nullable = false)

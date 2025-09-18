@@ -7,7 +7,6 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.experimental.SuperBuilder;
 import net.devpull.coworking.common.infrastructure.BaseEntity;
-import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import java.util.List;
 @Entity
@@ -17,7 +16,6 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @SuperBuilder
-@EntityListeners(AuditingEntityListener.class)
 public class Artist extends BaseEntity {
 
     @Column(name = "name", nullable = false)

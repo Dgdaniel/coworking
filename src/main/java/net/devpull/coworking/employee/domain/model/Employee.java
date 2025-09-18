@@ -9,7 +9,6 @@ import lombok.experimental.SuperBuilder;
 import net.devpull.coworking.billing.domain.model.Customer;
 import net.devpull.coworking.common.infrastructure.BaseEntity;
 import net.devpull.coworking.security.domain.model.UserAccount;
-import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -21,7 +20,6 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @SuperBuilder
-@EntityListeners(AuditingEntityListener.class)
 public class Employee extends BaseEntity {
 
     @Column(name = "first_name", nullable = false)

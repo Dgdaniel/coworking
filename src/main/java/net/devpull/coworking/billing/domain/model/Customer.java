@@ -8,7 +8,6 @@ import lombok.Setter;
 import lombok.experimental.SuperBuilder;
 import net.devpull.coworking.common.infrastructure.BaseEntity;
 import net.devpull.coworking.employee.domain.model.Employee;
-import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 @Entity
 @Table(name = "CUSTOMERS")
@@ -17,7 +16,6 @@ import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 @NoArgsConstructor
 @AllArgsConstructor
 @SuperBuilder
-@EntityListeners(AuditingEntityListener.class)
 public class Customer extends BaseEntity {
 
     @Column(name = "first_name", nullable = false)

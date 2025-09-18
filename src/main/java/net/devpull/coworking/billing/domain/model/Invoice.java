@@ -7,7 +7,6 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.experimental.SuperBuilder;
 import net.devpull.coworking.common.infrastructure.BaseEntity;
-import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -20,7 +19,6 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @SuperBuilder
-@EntityListeners(AuditingEntityListener.class)
 public class Invoice extends BaseEntity {
 
     @Column(name = "invoice_date", nullable = false)
